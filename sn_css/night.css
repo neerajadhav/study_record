@@ -1,0 +1,39 @@
+body{
+	background: gray;
+	scrollbar-color: gray black;
+}
+
+::selection{
+	color:white;
+	background:black;
+}
+
+.header{
+	background: white;
+	border-bottom: 1px solid lightgray;
+}
+
+.header .container{
+	background: white;
+}
+
+.container{
+	color: black;
+}
+
+.nav2{
+	background: white;
+	border-top: 1px solid lightgray;
+}
+
+.post-box{
+	background: #f9f6f6;
+}
+
+.card{
+	background: #f9f6f6;
+}
+
+.stories-card{
+	background: #f9f6f6;
+}

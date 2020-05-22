@@ -1,0 +1,371 @@
+body::-webkit-scrollbar {
+    display: none;
+    overflow-y: hidden;
+}
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff
+  url('../data-img/1.png'); 
+  z-index: 99999;
+  background-position: center;
+  background-size: center;
+  background-repeat: ; 
+}
+
+@font-face { 
+	font-family: 'proxima_ssv'; 
+	src: url('../fonts/proxima_ssv/ProximaNova-Regular.otf'); 
+}
+
+*{
+	text-decoration:none;
+	padding:0px;
+	margin:0px;
+	/*font-family:"Segoe UI",Arial,sans-serif;*/
+	font-family: proxima_ssv,"Segoe UI",Arial,Helvetica,Sans-Serif;
+}
+
+canvas {
+  display: block;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+  position: absolute;
+  top: 50%;
+}
+
+.clear1{
+	clear:right;
+}
+
+.clear2{
+	clear:both;
+}
+
+.flex{
+  background-position:center;
+  background-size:cover;
+}
+
+.container{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.container60{
+	width: 60%;
+	margin: 0px auto;
+}
+
+.formob{
+	display: none;
+}
+
+.forpc{
+	display: block;
+}
+
+.nav1{
+	display: auto;
+	max-height: 35px;
+}
+
+.aside30{
+	width:30%;
+	float: left;
+}
+
+.section70{
+	width:70%;
+	float: left;
+}
+
+.aside50{
+	width:50%;
+	float: left;
+}
+
+.section50{
+	width:50%;
+	float: left;
+}
+
+.aside25{
+	width:25%;
+	float: left;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.post-box{
+  border-top: 1px solid #eee;
+  line-height: 22px;
+}
+
+.post-box p{
+	color: #505050;
+}
+
+.post-box:hover{
+  background: #f8f8f8;
+}
+
+.left-bar{
+  width: 10%;
+  padding-top: 10px;
+}
+
+.img{
+    width: 60%;
+    border-radius: 100%;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.main-con{
+  width: 90%;
+  padding: 10px 10px 10px 0px;
+}
+
+.post-img-con{
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border-radius: 10px !important;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #eee;
+}
+
+.post-img{
+  width: 100%;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.full-post-img-con{
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.full-post-img{
+  width: 100%;
+  max-height: auto;
+}
+.post-controls{
+  width: 25%;
+  float: left;
+  padding: 0px 0px 10px 0px;
+  margin-top: 15px;
+}
+
+.post-controls i{
+  cursor: pointer;
+}
+
+.bottom-nav{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: ;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.middleone{
+	height: 91.1vh;
+	overflow: scroll;
+  overflow-x: hidden;
+}
+
+.middleone::-webkit-scrollbar {
+  width: 2px;               /* width of the entire scrollbar */
+  cursor: pointer;
+}
+.middleone::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+  cursor: pointer;
+}
+.middleone::-webkit-scrollbar-thumb {
+  background-color: #2196f3;    /* color of the scroll thumb */
+  border-radius: 1px;       /* roundness of the scroll thumb */
+  border: 2px solid #2196f3;  /* creates padding around scroll thumb */
+  cursor: pointer;
+}
+
+.trends{
+  width: 100%;
+  height: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap; 
+}
+
+.trends::-webkit-scrollbar {
+  height: 5px;               /* width of the entire scrollbar */
+}
+.trends::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+.trends::-webkit-scrollbar-thumb {
+  background-color: #2196f3;    /* color of the scroll thumb */
+  border-radius: 2px;       /* roundness of the scroll thumb */
+  border: 2px solid #2196f3;  /* creates padding around scroll thumb */
+}
+
+.atHash{
+  color: #2196f3;
+  cursor: pointer;
+}
+
+/*save form styling*/
+.saveform{
+  width: 100%;
+  margin: 0px auto 0px auto;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.saveform input{
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 1.01em;
+}
+
+.half-fields{
+  width: 45.7%;
+}
+
+.saveform .submit{
+  width: 92%;
+  background: lightgray;
+  border: 0px;
+  font-size: 20px;
+}
+
+.saveform table{
+  width: 92%;
+}
+
+
+/*login form styling*/
+.loginform{
+  display:none;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.loginform table{
+  width: 92%;
+}
+
+.loginform input{
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 100%;
+  font-size: 1.01em;
+}
+
+.loginform .submit{
+  width: 92%;
+  background: lightgray;
+  border: 0px;
+  font-size: 20px;
+}
+
+.bottom-textarea-con{
+  width: 70%;
+  padding-top: 2.5px;
+}
+
+.bottom-post-btn-con{
+  width: 30%;
+}
+
+.bottom-textarea{
+  height: 45px;
+  width: 95%;
+  border-radius: 10px;
+  padding: 5px;
+  float: right;
+}
+
+.bottom-post-btn{
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}

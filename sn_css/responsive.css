@@ -1,0 +1,136 @@
+@media screen and (max-width: 1163px) {
+	.container{
+		width: 95%;
+		border: 0px;
+	}
+	
+	.saveform{
+		width: 92%;
+		margin: 0px auto 10px auto;
+		border: 0px;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	.half-fields{
+		width: 92%;
+	}
+	.container60{
+		width: 95%;
+		border: 0px;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.container{
+		width: 95%;
+		border: 0px;
+	}
+
+	.container60{
+		width: 95%;
+		border: 0px;
+	}
+
+	.loginform{
+		width: 50%;
+		margin: 0px auto 10px auto;
+		border: 0px;
+		border-radius: 0px 0px 10px 10px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.container{
+		width: 100%;
+		border: 0px;
+	}
+	
+	.saveform{
+		width: 92%;
+		margin: 0px auto 10px auto;
+		border: 0px;
+		border-radius:  0px 0px 10px 10px;
+	}
+
+	.half-fields{
+		width: 92%;
+	}
+
+	.loginform{
+		width: 92%;
+		margin: 0px auto 10px auto;
+		border: 0px;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	.container60{
+		width: 100%;
+		border: 0px;
+	}
+
+	.aside30{
+		width:100%;
+	}
+
+	.section70{
+		width:100%;
+	}
+
+	.aside50{
+		width:100%;
+	}
+
+	.aside25{
+		width:100%;
+	}
+
+	.section50{
+		width:100%;
+	}
+
+	.formob{
+		display: block;
+	}
+
+	.forpc{
+		display: none;
+	}
+
+	.left-bar{
+	  width: 20%;
+	}
+
+	.main-con{
+	  width: 80%;
+	}
+
+	.post-img-con{
+	  width: 100%;
+	}
+
+	.middleone::-webkit-scrollbar {
+	  width: 0px;               /* width of the entire scrollbar */
+	}
+	.middleone::-webkit-scrollbar-track {
+	  background: white;        /* color of the tracking area */
+	}
+	.middleone::-webkit-scrollbar-thumb {
+	  background-color: #2196f3;    /* color of the scroll thumb */
+	  border-radius: 0px;       /* roundness of the scroll thumb */
+	  border: 1px solid #2196f3;  /* creates padding around scroll thumb */
+	}
+
+	.trends::-webkit-scrollbar {
+	  height: 0px;               /* width of the entire scrollbar */
+	}
+
+	.trends{
+		height: auto;
+	}
+
+	.middleone{
+	  height: 90vh;
+	  overflow: scroll;
+	  overflow-x: hidden;
+	}
+}

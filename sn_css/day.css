@@ -1,0 +1,39 @@
+::selection{
+	color:white;
+	background:blue;
+}
+
+body{
+	background: #f4f4f4;
+	scrollbar-color: #f9f6f6 lightgray;
+}
+
+.header{
+	background: white;
+	border-bottom: 1px solid lightgray;
+}
+
+.section50{
+	scrollbar-color: #f9f6f6 lightgray;
+}
+
+.nav2{
+	background: white;
+	border-top: 1px solid lightgray;
+}
+
+.card{
+	background: white;
+}
+
+.stories-card{
+	background: white;
+}
+
+@media screen and (max-width: 767px){
+	.post-box{
+		width: 100%;
+		box-shadow: 0px 0px 0px 0px;
+		margin: 5px auto;
+	}
+}
