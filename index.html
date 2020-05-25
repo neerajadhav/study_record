@@ -69,8 +69,19 @@ body, html {
 
 
     		<center class="pull_l" style="width: 50%; padding: 30px 0px 30px 0px;">
-    			<div class="img"><img src="dps/dp1.jpg"></div>
+    			<div class="img" style="border: 3px solid #00b8ff; padding: 3px;"><img id="trigger" src="dps/dp1.jpg"></div>
     		</center>
+
+        <!--Story Image-->
+        <img id="myImg" src="post-img/story_1.jpg" alt="" style="display: none;">
+
+        <!-- Story Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
     		<div class="clr_r"></div>
 
     		<div class="pull_l" style="width: 50%; line-height: 150px;">
@@ -293,6 +304,28 @@ function w3_close() {
       preloader.style.display = 'none';
     };
 </script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var trigger = document.getElementById("trigger");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+trigger.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 </body>
 </html>
