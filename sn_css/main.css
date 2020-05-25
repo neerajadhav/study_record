@@ -393,6 +393,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   overflow: none; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  border: 0px;
 }
 
 /* Modal Content (image) */
@@ -402,6 +403,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   max-height: 100%;
   width: auto;
   padding: 0px;
+  border: 0px;
 }
 
 /* Caption of Modal Image */
