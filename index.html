@@ -69,11 +69,11 @@ body, html {
 
 
     		<center class="pull_l" style="width: 50%; padding: 30px 0px 30px 0px;">
-    			<div class="img" style="border: 2px solid #00b8ff; padding: 3px;"><img id="trigger" src="dps/dp1.jpg"></div>
+    			<div onclick="openFullscreen();" class="img" style="border: 2px solid #00b8ff; padding: 3px;"><img id="trigger" src="dps/dp1.jpg"></div>
     		</center>
 
         <!--Story Image-->
-        <img id="myImg" src="post-img/story_1.jpg" alt="" style="display: none;">
+        <img id="myImg" src="post-img/story_2.jpg" alt="" style="display: none;">
 
         <!-- Story Modal -->
         <div id="myModal" class="modal">
@@ -323,8 +323,36 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+    document.msExitFullscreen();
+  }
   modal.style.display = "none";
 }
+</script>
+
+<script>
+/* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
+
+/* View in fullscreen */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
 </script>
 </body>
 </html>
