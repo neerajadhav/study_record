@@ -1,6 +1,15 @@
 body::-webkit-scrollbar {
-    display: none;
-    overflow-y: hidden;
+  width: 2px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2196f3;    /* color of the scroll thumb */
+  border-radius: 2px;       /* roundness of the scroll thumb */
+  border: 2px solid #2196f3;  /* creates padding around scroll thumb */
 }
 
 #loading{
