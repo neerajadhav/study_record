@@ -18,6 +18,11 @@
 		width: 95%;
 		border: 0px;
 	}
+
+	.FiftyTakaParallax{
+	  margin: 0px auto; 
+	  width: 70%;
+	}
 }
 
 @media screen and (max-width: 890px) {
@@ -36,6 +41,11 @@
 		margin: 0px auto 10px auto;
 		border: 0px;
 		border-radius: 0px 0px 10px 10px;
+	}
+
+	.FiftyTakaParallax{
+	  margin: 0px auto; 
+	  width: 70%;
 	}
 }
 
@@ -132,5 +142,10 @@
 	  height: 90vh;
 	  overflow: scroll;
 	  overflow-x: hidden;
+	}
+
+	.FiftyTakaParallax{
+	  margin: 0px auto; 
+	  width: 100%;
 	}
 }
